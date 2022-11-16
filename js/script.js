@@ -28,6 +28,14 @@ burgerDiv.addEventListener('click', function(){
     headerMenu.classList.toggle('activated');
     body.classList.toggle('lock');
 });
+document.addEventListener("click", (e) =>
+{
+  if (!burgerDiv.contains(e.target))
+  {
+    burgerDiv.classList.remove("activated"); 
+    headerMenu.classList.remove("activated"); 
+  }
+});
 
 //Intro Read More Button
 const readMoreBtn = document.querySelector('.intro__btn');
