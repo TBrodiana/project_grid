@@ -16,6 +16,9 @@
                 <div class="header__logo">
                     <p>Bouncy</p>
                 </div>
+                <div class="header__burger">
+                    <span></span>
+                </div>
                 <div class="header__nav">
                     <ul class="nav__links">
                         <li><a href="#hello__container" class="nav__item active">Hello</a></li>
@@ -124,18 +127,17 @@
                     <p class="portfolio__content_text content_text">At vero eos accusamus et iusto odio dignissimos ducimus qui blanditiis praesentium voluptatum.</p>
                 </div>
                 <div class="portfolio__menu">
-                    <div class="portfolio__menu_links">
-                        <a href="#" class="portfolio__menu__item">All Works</a>
-                        <a href="#" class="portfolio__menu__item">Print</a>
-                        <!-- <a href="#" class="portfolio__menu__item">Identity</a> -->
-                        <a href="#" class="portfolio__menu__item">Branding</a>
-                        <a href="#" class="portfolio__menu__item">Web</a>
-                        <a href="#" class="portfolio__menu__item">HTML</a>
-                        <a href="#" class="portfolio__menu__item">Wordpress</a>
-                    </div>
+                    <ul class="portfolio__menu_links">
+                        <li class="portfolio__menu__item activeItem">All</li>
+                        <li class="portfolio__menu__item">Print</li>
+                        <li class="portfolio__menu__item">Branding</li>
+                        <li class="portfolio__menu__item">Web</li>
+                        <li class="portfolio__menu__item">HTML</li>
+                        <li class="portfolio__menu__item">Wordpress</li>
+                    </ul>
                 </div>
-                <section class="portfolio__gallery gallery">
-						<div class="gallery__items">
+                <section class="portfolio__gallery">
+						<div class="gallery__items" id="gallery">
 
 							<div class="gallery__item one">
 								<img src="img/1.jpeg" alt="1">
@@ -326,7 +328,7 @@
                   <div class="form_submit">
                      <button type="submit" class="button" onclick="alert('Thank you! We will contact you soon.'); return false;">Submit Form</button>
                      
-                     <button type="button" class="button cancel" onclick="closeForm()">Close</button>
+                     <button type="reset" class="button cancel" onclick="closeForm()">Close</button>
                      </div>
                 </form>
               </div>

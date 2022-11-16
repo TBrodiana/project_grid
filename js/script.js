@@ -18,6 +18,17 @@ window.addEventListener('scroll', () => {
     });
   });
 
+// Header Burger menu
+
+let burgerDiv = document.querySelector(".header__burger");
+let headerMenu = document.querySelector('.header__nav');
+let body = document.querySelector('body');
+burgerDiv.addEventListener('click', function(){
+    burgerDiv.classList.toggle('activated');
+    headerMenu.classList.toggle('activated');
+    body.classList.toggle('lock');
+});
+
 //Intro Read More Button
 const readMoreBtn = document.querySelector('.intro__btn');
 const moreText = document.querySelector('.intro__readMore');
